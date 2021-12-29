@@ -1,27 +1,54 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { artistDetail } from "../store/actions";
 
 class Artist extends Component {
+  componentDidMount() {
+    this.props.dispatch(artistDetail(this.props.match.params.id));
+  }
 
-componentDidMount(){
-    this.props.dispatch(artistDetail(this.props.match.params.id))
-}
-
-    render() {
-        console.log(this.props.artists);
-        return (
+  artistTemplate(data) {
+      return data.artistData ? 
+      <div className="artist_view" >
+          <div
+          className="artist_background"
+          style={{ background: `url(/images/${data.artistData[0].cover})` }}
+        >
+          <Link to="/">Back Home</Link>
+          <div className="name">{data.artistData[0].name}</div>
+        </div>
+        <div className="artist_description">
+          <p>{data.artistData[0].bio}</p>
+          <div className="tags">
             <div>
-                Artist
+              <strong>Style</strong>: {data.artistData[0].style}
             </div>
-        )
-    }
+          </div>
+        </div>
+        <div className="artist_album_list">
+          {data.artistData[0].albums?.map((item) => (
+            <div key={item.cover} className="albums">
+              <div className="cover"
+              style={{
+                  background: `url(/images/albums/${item.cover})`
+              }}></div>
+            </div>
+          ))}
+        </div>
+      </div>
+      : null;
+  }
+
+  render() {
+    console.log(this.props.artists);
+    return <div>{this.artistTemplate(this.props.artists)}</div>;
+  }
 }
 
-function mapStateToProps (state) {
-    return {
-        artists: state.artists
-    }
+function mapStateToProps(state) {
+  return {
+    artists: state.artists,
+  };
 }
-export default connect(mapStateToProps)(Artist)
+export default connect(mapStateToProps)(Artist);
