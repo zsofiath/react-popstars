@@ -1,4 +1,4 @@
-import { GET_ARTISTS_ALL, GET_ARTISTS_SEARCH, GET_ARTISTS_DETAIL} from '../Types';
+import { GET_ARTISTS_ALL, GET_ARTISTS_SEARCH, GET_ARTISTS_DETAIL, CLEAR_ARTIST_DETAIL} from '../Types';
 import axios from 'axios';
 const URL = 'http://localhost:3004'
 
@@ -25,5 +25,13 @@ export function artistDetail(id) {
     return {
         type: GET_ARTISTS_DETAIL,
         payload: request
+    }
+}
+
+export function clearArtistDetail(id) {
+    const request = axios.get(`${URL}/artists?id=${id}`).then(resp => resp.data);
+    return {
+        type: CLEAR_ARTIST_DETAIL,
+        payload: null
     }
 }
