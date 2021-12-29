@@ -1,1 +1,2 @@
 export const GET_ARTISTS_ALL = 'GET_ARTISTS_ALL';
+export const GET_ARTISTS_SEARCH = 'GET_ARTISTS_SEARCH';
