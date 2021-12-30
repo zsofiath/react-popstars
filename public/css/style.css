@@ -1,8 +1,16 @@
+/*
+#009DAE - dark blue
+#71DFE7 - medium blue
+#C2FFF9 - light blue
+#FFE652 - yellow
+*/
+
 body {
     margin:0;
     padding:0;
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Quicksand', sans-serif;
+    background-color: #C2FFF9 ;
 }
 
 
@@ -37,23 +45,55 @@ h2 {
 .artist_container .artist_item {
     flex: 0 0 50%;
     width: 50%;
+    height: 180px;
 }
 
 .artist_container .artist_item .cover {
     background-size: cover !important;
     background-position: center center !important;
-    width: 100%;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    z-index: 1;
     height: 180px;
+    margin: 2px;
+    border-radius: 2px;
     position: relative;
+    transition: all .2s ease;
+    transform: scale(1);
+    border: 0px white solid;
+}
+
+.artist_container .artist_item .cover:hover {
+    z-index: 2;
+    transform: scale(1.05);
+    border: 1px white solid;
 }
 
 .artist_container .artist_item .cover div {
     position: absolute;
     bottom: 0px;
     color: #fff;
-    background: #2196F3;
+    background: #009DAE;
     padding: 5px;
+    z-index: 1;
     font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    box-shadow: 1px -1px 4px rgba(0,0,0,.7);
+    border-radius: 0 100% 0 0;
+    padding-right: 22px;
+    padding-top: 28px;
+}
+.artist_container .artist_item .cover::after {
+    content: '';
+    width: 91px;
+    box-shadow: 1px -2px 4px rgba(0,0,0,.4);
+    height: 55px;
+    display: block;
+    background-color: #FFE652;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 70% 0 0;
 }
 
 .artist_background {
