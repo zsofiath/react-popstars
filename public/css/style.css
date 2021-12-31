@@ -6,6 +6,7 @@
   --medium_blue: #71dfe7;
   --light_blue: #c2fff9;
   --yellow: #ffe652;
+  --yellow_light: #fff098;
   --gray: #3f3f3f;
 }
 
@@ -60,10 +61,12 @@ h2 {
     margin: 7px;
     box-shadow: 1px 1px 1px rgba(0,0,0,.2);
     transition: all .2s ease-in;
+    z-index: 1;
 }
 .artist_container .artist_item:hover {
     box-shadow: 5px 4px 12px rgb(0 0 0 / 42%);
     transform: scale(1.1);
+    z-index: 2;
 }
 
 .artist_container .artist_item .cover {
@@ -80,13 +83,12 @@ h2 {
     bottom: -6px;
     border-radius: 50%;
     color: #0c0c0c;
-    background: var(--yellow);
+    background: var(--yellow_light);
     padding: 5px;
     font-size: 13px;
     font-weight: 600;
     padding: 20px 10px;
-    transition: all .2s ease;
-    transition-delay: .1s;
+    transition: all .3s ease;
     left: -18px;
     box-shadow: 1px 1px 1px rgba(0,0,0,.2);
 }
@@ -94,6 +96,7 @@ h2 {
 .artist_container .artist_item:hover .cover div {
     transform: scale(1.3);
     box-shadow: 1px 3px 5px rgba(0,0,0,.5);
+    background: var(--yellow);
 }
 
 .artist_background {
