@@ -17,7 +17,7 @@ class Artist extends Component {
       <div className="artist_view" >
           <div
           className="artist_background"
-          style={{ background: `url(/images/${data.artistData[0].cover})` }}
+          style={{ background: `linear-gradient(white, black), url(/images/${data.artistData[0].cover})` }}
         >
           <Link to="/">Back Home</Link>
           <div className="name">{data.artistData[0].name}</div>
