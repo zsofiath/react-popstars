@@ -1,6 +1,3 @@
-/*
-
-*/
 :root {
   --dark_blue: #009dae;
   --medium_blue: #71dfe7;
@@ -17,9 +14,9 @@
 body {
   margin: 0;
   padding: 0;
-  /* font-family: 'Roboto', sans-serif; */
   font-family: "Quicksand", sans-serif;
   background-color: var(--medium_blue);
+  overflow-x: hidden;
 }
 
 h2 {
@@ -54,19 +51,20 @@ h2 {
 }
 
 .artist_container .artist_item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 7px;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.2);
-    transition: all .2s ease-in;
-    z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 7px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in;
+  z-index: 1;
 }
+
 .artist_container .artist_item:hover {
-    box-shadow: 5px 4px 12px rgb(0 0 0 / 42%);
-    transform: scale(1.1);
-    z-index: 2;
+  box-shadow: 5px 4px 12px rgb(0 0 0 / 42%);
+  transform: scale(1.1);
+  z-index: 2;
 }
 
 .artist_container .artist_item .cover {
@@ -74,52 +72,58 @@ h2 {
   background-position: center center !important;
   border-radius: 50%;
   position: relative;
-  height: 18vw;
-  width: 18vw;
+  height: 20vw;
+  width: 20vw;
 }
 
 .artist_container .artist_item .cover div {
-    position: absolute;
-    bottom: -6px;
-    border-radius: 50%;
-    color: #0c0c0c;
-    background: var(--yellow_light);
-    padding: 5px;
-    font-size: 1em;
-    font-weight: 600;
-    padding: 20px 10px;
-    transition: all .3s ease;
-    left: -18px;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.2);
+  position: absolute;
+  bottom: -6px;
+  border-radius: 50%;
+  color: #0c0c0c;
+  background: var(--yellow_light);
+  padding: 5px;
+  font-size: 1.1em;
+  padding: 20px 10px;
+  transition: all 0.3s ease;
+  left: -18px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  font-family: "Abril Fatface", cursive;
 }
 
 .artist_container .artist_item:hover .cover div {
-    transform: scale(1.3);
-    box-shadow: 1px 3px 5px rgba(0,0,0,.5);
-    background: var(--yellow);
+  transform: scale(1.3);
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+  background: var(--yellow);
 }
 
 .artist_background {
   background-size: cover !important;
   background-position: top center !important;
   width: 100%;
-  height: 250px;
+  height: 90vh;
   position: relative;
+  background-blend-mode: multiply;
 }
 
 .artist_background div {
   position: absolute;
+  font-family: "Abril Fatface", cursive;
   bottom: 0px;
-  color: #fff;
-  background: #2196f3;
-  padding: 5px;
-  font-size: 16px;
+  color: var(--yellow_light);
+  padding: 0 15px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid var(--light_blue);
+  font-size: 3em;
+  width: 100%;
 }
 
 .artist_background a {
   position: absolute;
   top: 0px;
-  color: #fff;
+  color: var(--light_blue);
+  font-family: "Abril Fatface", cursive;
+  text-decoration: none;
   padding: 5px;
   font-size: 13px;
 }
@@ -127,67 +131,87 @@ h2 {
 .artist_description {
   box-sizing: border-box;
   padding: 10px;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 1em;
+  color: black;
+}
+
+.artist_description p {
+  margin: 15px 10px 30px;
 }
 
 .artist_description .tags {
-  color: #007a8a;
+  color: var(--yellow);
+  background-color: var(--dark_blue);
+  margin: 10px -10px;
+  padding: 10px 20px;
+  font-size: 1.4em;
 }
 
 .artist_album_list {
-  display: -ms-flex;
-  display: -webkit-flex;
   display: flex;
-  flex-flow: wrap;
-  padding: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .artist_album_list .albums {
-  flex: 0 0 50%;
-  width: 50%;
+  /* flex: 0 0 50%;
+  width: 50%; */
+  width: 20vw;
+  height: 20vw;
+  position: relative;
+  margin-bottom: 15px;
 }
 
 .artist_album_list .albums .cover {
   background-size: cover !important;
-  background-position: top center !important;
-  width: 100%;
-  height: 150px;
-  position: relative;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
-
-@media screen and (max-width: 1250px){
-    .artist_container .artist_item .cover {
-        height: 20vw;
-        width: 20vw;
-      }
+@media screen and (max-width: 1250px) {
+  .artist_container .artist_item .cover {
+    height: 21vw;
+    width: 21vw;
+  }
 }
 
-@media screen and (max-width: 1000px){
-    .artist_container .artist_item .cover {
-        height: 25vw;
-        width: 25vw;
-      }
+@media screen and (max-width: 1000px) {
+  .artist_container .artist_item .cover {
+    height: 25vw;
+    width: 25vw;
+  }
+
+  .artist_album_list .albums {
+    height: 30vw;
+    width: 30vw;
+  }
 }
 
-@media screen and (max-width: 800px){
-    .artist_container .artist_item .cover {
-        height: 30vw;
-        width: 30vw;
-      }
+@media screen and (max-width: 800px) {
+  .artist_container .artist_item .cover {
+    height: 35vw;
+    width: 35vw;
+  }
+  .artist_album_list .albums {
+    height: 37vw;
+    width: 37vw;
+  }
 }
 
-@media screen and (max-width: 650px){
-    .artist_container .artist_item .cover {
-        height: 40vw;
-        width: 40vw;
-      }
-}
+@media screen and (max-width: 650px) {
+  .artist_container .artist_item .cover {
+    height: 53vw;
+    width: 53vw;
+  }
 
-@media screen and (max-width: 550px){
-    .artist_container .artist_item .cover {
-        height: 70vw;
-        width: 70vw;
-      }
+  .artist_album_list .albums {
+    height: 51vw;
+    width: 51vw;
+  }
 }
