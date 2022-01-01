@@ -88,7 +88,7 @@ h2 {
   transition: all 0.3s ease;
   left: -18px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  font-family: "Abril Fatface", cursive;
+  font-family: "Quicksand", sans-serif;
 }
 
 .artist_container .artist_item:hover .cover div {
@@ -108,7 +108,7 @@ h2 {
 
 .artist_background div {
   position: absolute;
-  font-family: "Abril Fatface", cursive;
+  font-family: "Quicksand", sans-serif;
   bottom: 0px;
   color: var(--yellow_light);
   padding: 0 15px;
@@ -125,7 +125,7 @@ h2 {
   margin: 6px;
   border-radius:2px;
   color: var(--light_blue);
-  font-family: "Abril Fatface", cursive;
+  font-family: "Quicksand", sans-serif;
   text-decoration: none;
   padding: 5px;
   font-size: 13px;
@@ -143,11 +143,13 @@ h2 {
 
 .artist_description p {
   margin: 15px 10px 30px;
+  font-size: 1em;
+  color: black;
+  font-weight: bold;
 }
 
 .artist_description .tags {
   color: var(--yellow);
-  background-color: var(--dark_blue);
   margin: 10px -10px;
   width: calc(100% - 20px);
   padding: 10px 20px;
