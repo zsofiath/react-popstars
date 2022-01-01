@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/react-popstars/static/css/main.83266f32.css",
-    "main.js": "/react-popstars/static/js/main.2644e487.js",
+    "main.js": "/react-popstars/static/js/main.783d77f7.js",
     "index.html": "/react-popstars/index.html",
     "main.83266f32.css.map": "/react-popstars/static/css/main.83266f32.css.map",
-    "main.2644e487.js.map": "/react-popstars/static/js/main.2644e487.js.map"
+    "main.783d77f7.js.map": "/react-popstars/static/js/main.783d77f7.js.map"
   },
   "entrypoints": [
     "static/css/main.83266f32.css",
-    "static/js/main.2644e487.js"
+    "static/js/main.783d77f7.js"
   ]
 }
