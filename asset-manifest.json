@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/react-popstars/static/js/main.42bc2e1a.js",
+    "main.js": "/react-popstars/static/js/main.ca25180d.js",
     "index.html": "/react-popstars/index.html",
-    "main.42bc2e1a.js.map": "/react-popstars/static/js/main.42bc2e1a.js.map"
+    "main.ca25180d.js.map": "/react-popstars/static/js/main.ca25180d.js.map"
   },
   "entrypoints": [
-    "static/js/main.42bc2e1a.js"
+    "static/js/main.ca25180d.js"
   ]
 }
