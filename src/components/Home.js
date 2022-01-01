@@ -18,7 +18,7 @@ class Home extends Component {
       <Link to={`/artist/${item.id}`} key={item.id} className="artist_item">
         <div
           className="cover"
-          style={{ background: `url(/images/${item.cover})` }}
+          style={{ background: `url(${require('../../build/images/'+item.cover)})` }}
         >
           <div>{item.name}</div>
         </div>
