@@ -101,7 +101,7 @@ h2 {
   background-size: cover !important;
   background-position: top center !important;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   position: relative;
   background-blend-mode: multiply;
 }
@@ -121,11 +121,17 @@ h2 {
 .artist_background a {
   position: absolute;
   top: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 6px;
+  border-radius:2px;
   color: var(--light_blue);
   font-family: "Abril Fatface", cursive;
   text-decoration: none;
   padding: 5px;
   font-size: 13px;
+}
+.artist_background a:hover {
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .artist_description {
@@ -143,6 +149,7 @@ h2 {
   color: var(--yellow);
   background-color: var(--dark_blue);
   margin: 10px -10px;
+  width: calc(100% - 20px);
   padding: 10px 20px;
   font-size: 1.4em;
 }
