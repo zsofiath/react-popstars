@@ -1,19 +1,16 @@
-import React, { Component } from "react";
+import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { artistsListAll, artistsListSearch } from "../store/actions";
 import { Link } from "react-router-dom";
 
-class Home extends Component {
-  componentDidMount() {
-    this.props.dispatch(artistsListAll());
-  }
+function Home(props) {
+  
+  useEffect(() => {
+    props.dispatch(artistsListAll());
+  }, []);
 
-  showArtistAll = (data) =>
-    data?.artistList?.map((item) => {
-      return this.getListItem(item);
-    });
 
-  getListItem(item) {
+  function getListItem(item) {
     return (
       <Link to={`artist/${item.id}`} key={item.id} className="artist_item">
         <div
@@ -26,29 +23,33 @@ class Home extends Component {
     );
   }
 
-  searchArtist(event) {
+  function searchArtist(event) {
     this.props.dispatch(artistsListSearch(event.target.value));
   }
 
-  render() {
-    return (
-      <>
+  const showArtistAll = (data) =>
+    data?.artistList?.map((item) => {
+      return getListItem(item);
+    });
+
+
+  return (
+    <>
         <div className="search_container">
           <h2>Search your artist</h2>
           <input
             type="text"
             onChange={(event) => {
-              this.searchArtist(event);
+              searchArtist(event);
             }}
           />
         </div>
 
         <div className="artist_container">
-          {this.showArtistAll(this.props.artists)}
+          {showArtistAll(props.artists)}
         </div>
       </>
-    );
-  }
+  )
 }
 
 function mapStateToProps(state) {
