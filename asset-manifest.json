@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-popstars/static/css/main.cde8d4ba.css",
-    "main.js": "/react-popstars/static/js/main.5ba8a308.js",
+    "main.js": "/react-popstars/static/js/main.b5a79024.js",
     "static/media/lynyrd_skynyrd.jpg": "/react-popstars/static/media/lynyrd_skynyrd.fe1ee9808104458d5e2f.jpg",
     "static/media/pearl_jam.jpg": "/react-popstars/static/media/pearl_jam.0371509563dd153404a3.jpg",
     "static/media/Last_Of_A_Dyin_Breed.jpg": "/react-popstars/static/media/Last_Of_A_Dyin_Breed.b3af9633dff6e6464972.jpg",
@@ -51,10 +51,10 @@
     "static/media/solitary_man.jpg": "/react-popstars/static/media/solitary_man.938e8f0b140d7cf532ef.jpg",
     "index.html": "/react-popstars/index.html",
     "main.cde8d4ba.css.map": "/react-popstars/static/css/main.cde8d4ba.css.map",
-    "main.5ba8a308.js.map": "/react-popstars/static/js/main.5ba8a308.js.map"
+    "main.b5a79024.js.map": "/react-popstars/static/js/main.b5a79024.js.map"
   },
   "entrypoints": [
     "static/css/main.cde8d4ba.css",
-    "static/js/main.5ba8a308.js"
+    "static/js/main.b5a79024.js"
   ]
 }
