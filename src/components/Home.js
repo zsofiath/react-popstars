@@ -24,7 +24,7 @@ function Home(props) {
   }
 
   function searchArtist(event) {
-    this.props.dispatch(artistsListSearch(event.target.value));
+    props.dispatch(artistsListSearch(event.target.value));
   }
 
   const showArtistAll = (data) =>
