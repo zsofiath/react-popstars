@@ -118,7 +118,7 @@ h2 {
   width: 100%;
 }
 
-.artist_background a {
+.artist_background button {
   position: absolute;
   top: 0px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -128,9 +128,11 @@ h2 {
   font-family: "Quicksand", sans-serif;
   text-decoration: none;
   padding: 5px;
+  border: none;
+  cursor: pointer;
   font-size: 13px;
 }
-.artist_background a:hover {
+.artist_background button:hover {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
