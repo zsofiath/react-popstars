@@ -19,7 +19,7 @@ export function artistsListSearch(keywords){
     
     return {
         type: GET_ARTISTS_SEARCH,
-        payload: json.artists.filter(artist => artist.name.includes(keywords))
+        payload: json.artists.filter(artist => artist.name.toLowerCase().includes(keywords.toLowerCase()))
     }
 }
 
