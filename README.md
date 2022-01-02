@@ -25,7 +25,7 @@ The above mentioned problem occured in the case of navigation too. Opening an ar
 ```js
 <button onClick={()=>{this.props.history.goBack();}}>Back Home</button>
 ```
-Routing must handle the original path
+* Routing must handle the original path:
 ```js
 const Routes = () => {
     return (
