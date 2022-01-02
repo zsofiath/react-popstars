@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-popstars/static/css/main.b7f4dbde.css",
+    "main.css": "/react-popstars/static/css/main.0fff6eaf.css",
     "main.js": "/react-popstars/static/js/main.e8fa1c28.js",
     "static/media/lynyrd_skynyrd.jpg": "/react-popstars/static/media/lynyrd_skynyrd.fe1ee9808104458d5e2f.jpg",
     "static/media/pearl_jam.jpg": "/react-popstars/static/media/pearl_jam.0371509563dd153404a3.jpg",
@@ -50,11 +50,11 @@
     "static/media/man_comes_around.jpg": "/react-popstars/static/media/man_comes_around.9027227636243e49613a.jpg",
     "static/media/solitary_man.jpg": "/react-popstars/static/media/solitary_man.938e8f0b140d7cf532ef.jpg",
     "index.html": "/react-popstars/index.html",
-    "main.b7f4dbde.css.map": "/react-popstars/static/css/main.b7f4dbde.css.map",
+    "main.0fff6eaf.css.map": "/react-popstars/static/css/main.0fff6eaf.css.map",
     "main.e8fa1c28.js.map": "/react-popstars/static/js/main.e8fa1c28.js.map"
   },
   "entrypoints": [
-    "static/css/main.b7f4dbde.css",
+    "static/css/main.0fff6eaf.css",
     "static/js/main.e8fa1c28.js"
   ]
 }
