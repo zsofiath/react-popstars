@@ -7,8 +7,8 @@ import Artist from './components/Artist'
 const Routes = () => {
     return (
         <Switch>
-            <Route path="/artist/:id" component={Artist}></Route>
-            <Route path="/" component={Home}></Route>
+            <Route path={`${window.location.pathname}artist/:id`} component={Artist}></Route>
+            <Route path={window.location.pathname} component={Home}></Route>
         </Switch>
     )
 }

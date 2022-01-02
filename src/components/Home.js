@@ -15,7 +15,7 @@ class Home extends Component {
 
   getListItem(item) {
     return (
-      <Link to={`/artist/${item.id}`} key={item.id} className="artist_item">
+      <Link to={`artist/${item.id}`} key={item.id} className="artist_item">
         <div
           className="cover"
           style={{ background: `url(${require('../../build/images/'+item.cover)})` }}
