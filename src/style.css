@@ -167,12 +167,12 @@ h2 {
 }
 
 .artist_album_list .albums {
-  /* flex: 0 0 50%;
-  width: 50%; */
   width: 20vw;
   height: 20vw;
   position: relative;
   margin-bottom: 15px;
+  border-radius: 3px;
+  background-color: var(--light_blue);
 }
 
 .artist_album_list .albums .cover {
@@ -180,10 +180,10 @@ h2 {
   border-radius: 3px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  left: 6px;
+  right: 6px;
+  top: 6px;
+  bottom: 6px;
 }
 
 @media screen and (max-width: 1250px) {
