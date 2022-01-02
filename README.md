@@ -15,6 +15,27 @@ And the css like this:
 ```js
 import './style.css';
 ```
+### Navigation
+The above mentioned problem occured in the case of navigation too. Opening an artist rewrote the path. I had to change some things:
+* Using relative path for navigation
+```js
+<Link to={`artist/${item.id}`} key={item.id} className="artist_item">
+```
+* Back button must use the routing history
+```js
+<button onClick={()=>{this.props.history.goBack();}}>Back Home</button>
+```
+Routing must handle the original path
+```js
+const Routes = () => {
+    return (
+        <Switch>
+            <Route path={`${window.location.pathname}artist/:id`} component={Artist}></Route>
+            <Route path={window.location.pathname} component={Home}></Route>
+        </Switch>
+    )
+}
+```
 
 ## 3. :recycle: Elliminating class components and using hooks
 ## 4. :zap: Improving the performance
