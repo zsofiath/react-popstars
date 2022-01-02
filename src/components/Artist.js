@@ -19,7 +19,7 @@ class Artist extends Component {
           className="artist_background"
           style={{ background: `linear-gradient(white, black), url(${require('../../build/images/'+data.artistData[0].cover)})` }}
         >
-          <Link to="/">Back Home</Link>
+          <button onClick={()=>{this.props.history.goBack();}}>Back Home</button>
           <div className="name">{data.artistData[0].name}</div>
         </div>
         <div className="artist_description">
