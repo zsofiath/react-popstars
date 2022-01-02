@@ -17,6 +17,7 @@ body {
   font-family: "Quicksand", sans-serif;
   background-color: var(--medium_blue);
   overflow-x: hidden;
+  padding-bottom: 40px;
 }
 
 h2 {
