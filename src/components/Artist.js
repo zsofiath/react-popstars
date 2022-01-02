@@ -45,7 +45,6 @@ class Artist extends Component {
   }
 
   render() {
-    console.log(this.props.artists);
     return <div>{this.artistTemplate(this.props.artists)}</div>;
   }
 }
