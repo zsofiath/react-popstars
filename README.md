@@ -38,5 +38,6 @@ const Routes = () => {
 ```
 
 ## 3. :recycle: Elliminating class components and using hooks
+It was pretty straightforward. No difficulties, only useEffect was needed.
 ## 4. :zap: Improving the performance
 ## 5. :sparkles: Create a reactive app
